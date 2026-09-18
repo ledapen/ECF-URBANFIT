@@ -1,0 +1,8 @@
+<?php class User{
+public static function byEmail($email){$s=db()->prepare('SELECT u.*,r.name role FROM users u JOIN roles r ON r.id=u.role_id WHERE email=? AND u.active=1');$s->execute([$email]);return $s->fetch();}
+public static function create($d){$role=db()->query("SELECT id FROM roles WHERE name='member'")->fetchColumn();$s=db()->prepare('INSERT INTO users(role_id,firstname,lastname,email,password,phone,city) VALUES(?,?,?,?,?,?,?)');$s->execute([$role,trim($d['firstname']),trim($d['lastname']),strtolower(trim($d['email'])),password_hash($d['password'],PASSWORD_DEFAULT),trim($d['phone']??''),trim($d['city']??'')]);return db()->lastInsertId();}
+public static function updateProfile($id,$d){$s=db()->prepare('UPDATE users SET firstname=?,lastname=?,phone=?,city=? WHERE id=?');$s->execute([trim($d['firstname']),trim($d['lastname']),trim($d['phone']??''),trim($d['city']??''),$id]);}
+public static function allStaff(){return db()->query("SELECT u.id,u.firstname,u.lastname,u.email,u.active,r.name role,u.created_at FROM users u JOIN roles r ON r.id=u.role_id WHERE r.name IN ('coach','admin') ORDER BY u.id DESC")->fetchAll();}
+public static function createCoach($d){$role=db()->query("SELECT id FROM roles WHERE name='coach'")->fetchColumn();$s=db()->prepare('INSERT INTO users(role_id,firstname,lastname,email,password,phone,city) VALUES(?,?,?,?,?,?,?)');$s->execute([$role,trim($d['firstname']),trim($d['lastname']),strtolower(trim($d['email'])),password_hash($d['password'],PASSWORD_DEFAULT),trim($d['phone']??''),trim($d['city']??'')]);}
+public static function toggle($id){$s=db()->prepare("UPDATE users SET active=IF(active=1,0,1) WHERE id=? AND role_id=(SELECT id FROM roles WHERE name='coach')");$s->execute([$id]);}
+}

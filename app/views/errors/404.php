@@ -1,0 +1,1 @@
+<main class="container py-5 text-center"><div class="empty-state"><i class="bi bi-compass"></i><h1>404</h1><p>Cette page n'existe pas.</p><a class="btn btn-accent" href="/">Retour à l'accueil</a></div></main>
