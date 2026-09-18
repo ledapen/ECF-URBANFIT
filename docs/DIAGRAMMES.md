@@ -1,5 +1,4 @@
-# Diagrammes URBANFIT
-
+# Diagrammes PENDAFITNESS
 ## Cas d'utilisation
 ```mermaid
 flowchart LR
