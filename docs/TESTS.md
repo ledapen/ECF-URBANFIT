@@ -1,2 +1,2 @@
-# Plan de tests URBANFIT
+# Plan de tests PENDAFITNESS
 Effectuer les tests sur Chrome/Firefox et largeur mobile. Tester les rôles membre, coach, admin. Vérifier les formulaires vides, e-mails invalides, mot de passe court, CSRF, accès interdit, doublon de réservation, séance pleine, annulation, CRUD activité, création/suppression séance, modération avis, traitement contact, création/désactivation coach, graphique admin et affichage 404. Après déploiement Render, refaire les parcours critiques sur la base TiDB Cloud.
