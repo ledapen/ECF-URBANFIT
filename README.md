@@ -1,4 +1,4 @@
-# URBANFIT - ECF Développeur Web et Web Mobile
+# PENDAFITNESS - ECF Développeur Web et Web Mobile
 
 Projet de **PENDA ESSAMA LEOPOLD EMMANUEL**. Application web de réservation d'activités sportives réalisée pour démontrer les compétences front-end et back-end du titre DWWM.
 
