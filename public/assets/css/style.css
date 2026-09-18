@@ -7,3 +7,12 @@
 .navbar-brand .brand-dot {
     color: #ff6b00 !important;
 }
+
+    /* Logo PENDAFITNESS dans l'en-tête */
+.navbar-brand .brand-dot {
+    color: #ff6b00 !important;
+}
+
+.navbar-brand .brand-text {
+    color: #ffffff !important;
+}
