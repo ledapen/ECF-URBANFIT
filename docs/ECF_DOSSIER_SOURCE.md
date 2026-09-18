@@ -1,9 +1,9 @@
-# DOSSIER DE CONCEPTION - URBANFIT
+# DOSSIER DE CONCEPTION - PENDAFITNESS
 **Titre professionnel DWWM - ECF**  
 **Candidat : PENDA ESSAMA LEOPOLD EMMANUEL**
 
 ## 1. Présentation du projet
-UrbanFit est une application web de réservation d'activités sportives. Un visiteur peut découvrir le catalogue et filtrer les offres. Un membre crée un compte, réserve une séance, suit ses réservations, gère ses favoris et dépose un avis après participation. Un coach gère les activités, les séances, les réservations, les avis et les demandes de contact. L'administrateur pilote les comptes coach et consulte les indicateurs d'activité.
+PENDAFITNESS est une application web de réservation d'activités sportives. Un visiteur peut découvrir le catalogue et filtrer les offres. Un membre crée un compte, réserve une séance, suit ses réservations, gère ses favoris et dépose un avis après participation. Un coach gère les activités, les séances, les réservations, les avis et les demandes de contact. L'administrateur pilote les comptes coach et consulte les indicateurs d'activité.
 
 ## 2. Besoin et objectifs
 Le projet répond au besoin d'une structure sportive souhaitant centraliser son catalogue et ses inscriptions. Les objectifs sont : rendre les activités visibles, simplifier la réservation, contrôler les capacités, fournir un espace membre, donner aux équipes des outils métier et proposer une administration sécurisée.
@@ -82,4 +82,4 @@ Le code est poussé sur GitHub. Render construit l'image à partir du Dockerfile
 La migration MySQL/TiDB nécessite une configuration correcte du port, des identifiants et de TLS. Les erreurs de routes sont diagnostiquées via les logs Render. Les contraintes de capacité sont contrôlées dans une transaction lors de la réservation.
 
 ## 15. Conclusion
-UrbanFit démontre les deux dimensions du titre DWWM : une interface responsive et dynamique côté front-end, et une application serveur sécurisée, reliée à une base relationnelle et déployable côté back-end.
+PENDAFITNESS démontre les deux dimensions du titre DWWM : une interface responsive et dynamique côté front-end, et une application serveur sécurisée, reliée à une base relationnelle et déployable côté back-end.
