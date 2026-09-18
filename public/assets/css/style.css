@@ -3,3 +3,8 @@
 }.brand-dot {
     color: #ff6b00 !important;
 }}
+
+/* P orange du logo PENDAFITNESS */
+.navbar-brand .brand-dot {
+    color: #ff6b00 !important;
+}
